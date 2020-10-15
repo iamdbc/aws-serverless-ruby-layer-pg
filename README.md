@@ -21,7 +21,10 @@ $ sls plugin install -n serverless-ruby-layer
 And deploy to aws
 
 ```bash
-$ sls deploy
+$ sls deploy --stage production
+
+# or specify aws profile
+$ sls deploy --stage production --aws-profile custom-profile
 ```
 
 After deployed, you will see some outputs, copy the layers arn to your lambda layers, or you could find the arn in you AWS Lambda Layers list.
